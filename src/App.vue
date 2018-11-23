@@ -33,5 +33,6 @@
   max-height: 667px;
   background-color:#ededed;
   display: block;
+  position: relative;
 }
 </style>
