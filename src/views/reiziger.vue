@@ -5,8 +5,8 @@
     <span _ngcontent-c0="" class="icon icon--refresh icon--nsBlue icon--inline">
       <span _ngcontent-c0="" class="alt">Vertrek </span>
     </span> -->
-
-    <Noodmelding/>
+    <router-view></router-view>
+    <!-- <Noodmelding/> -->
   </div>
 </template>
 
