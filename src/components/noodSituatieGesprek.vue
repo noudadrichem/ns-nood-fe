@@ -1,10 +1,9 @@
 <template>
     <div class="NoodSituatieGesprekInhoud">
-                 
-        <div class="gesprek">
-            <p>Spraakverbinding met <br><i><ins>{{ conducteur }}</ins></i></p>
+        <div class="tile">
+            <p>U bent nu in verbinding met <br><i><ins>{{ conducteur }}</ins></i></p>
+            <button @click="$emit('close')" class="btn verbreekVerbinding">Verbreek verbinding</button>
         </div>
-        <button @click="$emit('close')" class="btn verbreekVerbinding">Verbreek verbinding</button>
     </div>
 </template>
 
