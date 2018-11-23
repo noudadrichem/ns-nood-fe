@@ -3,8 +3,7 @@
   <div class="nano__container">
     <ul class="mainMenu__list">
       <li class="mainMenu__item">
-         <a @click="$router.push('noodmelding')" to="noodmelding"><a  class="mainMenu__link  mainMenu__link--reisinformatie" aria-expanded="false">
-        Noodmelding</a></a>
+        <router-link class="mainMenu__link  mainMenu__link--reisinformatie" aria-expanded="false" to="/reiziger/noodmelding">Noodmelding</router-link>
       </li>
       <li class="mainMenu__item">
         <a href="#" class="mainMenu__link  mainMenu__link--kaartjes" aria-expanded="false">
