@@ -57,8 +57,11 @@
       },
       verifyNotification() {
         // this.$router.push('noodSituatieOverzicht')
+        const body = {
+          notificationtype: 'noodmelding'
+        }
 
-        axios.post(this.$apiUrl)
+        axios.post(`${this.$apiUrl}/api/komtmeldingaan`, body)
           .then(res => {
             // this.$router.push('noodSituatieOverzicht')
             console.log(res)

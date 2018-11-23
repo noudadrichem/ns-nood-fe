@@ -6,7 +6,7 @@ import './registerServiceWorker'
 Vue.config.productionTip = false
 
 const LOCAL = true
-Vue.prototype.$apiUrl = LOCAL ? 'http://localhost:5001/' : ''
+Vue.prototype.$apiUrl = LOCAL ? 'http://localhost:5000' : ''
 
 new Vue({
   router,
