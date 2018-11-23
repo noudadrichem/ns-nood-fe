@@ -12,12 +12,14 @@
 import Hoofd from "@/components/heading"
 import Footer from "@/components/footer"
 import Noodmelding from '@/components/noodmelding'
+import NoodSituatieOverzicht from '@/components/noodSituatieOverzicht'
 
   export default {
     components: {
     	Hoofd,
     	Footer,
-      Noodmelding
+      Noodmelding,
+        NoodSituatieOverzicht
     }
   }
 </script>
