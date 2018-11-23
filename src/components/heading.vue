@@ -1,13 +1,25 @@
 <template>
 	<div class="topbar">
-		<div class="arrow">
-			<i class="fa fa-angle-left"></i>
-		</div>	
+		<div v-if="$route.path != '/reiziger'">
+			<div class="arrow" @click="$router.go(-1)">
+				<i class="fa fa-angle-left"></i>
+			</div>	
+		</div>
+		
 		<div class="logo">
 			<img src="img/Logo-NS-monotone.svg">
 		</div>
 	</div>
 </template>
+
+<script>
+export default {
+	mounted() {
+		console.log(this.$route)
+	}
+}
+</script>
+
 
 <style lang="css">
 

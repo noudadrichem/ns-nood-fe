@@ -45,7 +45,7 @@
 
 <style lang="css">
     .NoodSituatieOverzichtInhoud {
-        padding:20px 40px;
+        padding:0 24px;
     }
     .btn.spraakverbinding {
         background-color: #dc001f;

@@ -25,8 +25,7 @@ export default new Router({
       }, {
         path: '',
         component: Opties
-      }]
-      {
+      }, {
         path: 'maken',
         component: Noodmeldingmaken
       }, {
