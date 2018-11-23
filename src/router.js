@@ -6,6 +6,7 @@ import Noodmelding from './components/noodmelding.vue'
 import Opties from './components/opties.vue'
 import Noodmeldingmaken from './components/noodmeldingmaken.vue'
 import NoodSituatieOverzicht from './components/noodSituatieOverzicht.vue'
+import NoodSituatieGesprek from './components/noodSituatieGesprek.vue'
 
 Vue.use(Router)
 
