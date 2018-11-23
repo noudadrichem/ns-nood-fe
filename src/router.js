@@ -11,38 +11,36 @@ import medewerker from './components/medewerkerRitInfo.vue'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      redirect: '/reiziger'
+    routes: [{
+            path: '/',
+            redirect: '/reiziger'
+        }, {
+            path: '/reiziger',
+            name: 'reiziger',
+            component: Reiziger,
+            children: [{
+                path: 'noodmelding',
+                component: Noodmelding
+            }, {
+                path: '',
+                component: Opties
+            }, {
+                path: 'maken',
+                component: Noodmeldingmaken
+            },
+            {
+                path: 'noodSituatieOverzicht',
+                component: NoodSituatieOverzicht
+            }]
     },
     {
-      path: '/reiziger',
-      name: 'reiziger',
-      component: Reiziger,
-      children: [{
-        path: 'noodmelding',
-        component: Noodmelding
-      }, {
-        path: '',
-        component: Opties
-      }]
-      {
-        path: 'maken',
-        component: Noodmeldingmaken
-      }, {
-        path: 'noodSituatieOverzicht',
-        component: NoodSituatieOverzicht
-      }]
-    },
-    {
-      path: '/conducteur',
-      name: 'conducteur',
-      component: Conducteur,
-       children: [{
-          path: '',
-          component: medewerker
-       }]
-    },
-  ]
+        path: '/conducteur',
+        name: 'conducteur',
+        component: Conducteur,
+        children: [{
+            path: '',
+            component: medewerker
+        }]
+    }
+]
 })
