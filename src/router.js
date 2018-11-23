@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Reiziger from './views/reiziger.vue'
 import Conducteur from './views/conducteur.vue'
 import Noodmelding from './components/noodmelding.vue'
+import Opties from './components/opties.vue'
 import Noodmeldingmaken from './components/noodmeldingmaken.vue'
 import NoodSituatieOverzicht from './components/noodSituatieOverzicht.vue'
 import medewerker from './components/medewerkerRitInfo.vue'
@@ -23,6 +24,10 @@ export default new Router({
         path: 'noodmelding',
         component: Noodmelding
       }, {
+        path: '',
+        component: Opties
+      }]
+      {
         path: 'maken',
         component: Noodmeldingmaken
       }, {
