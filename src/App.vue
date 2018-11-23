@@ -19,7 +19,7 @@
   font-family: "NS Sans","Segoe UI",Myriad,Verdana,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: #060922;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +37,6 @@
 }
 
 p {
-  color: #060922;
   font-size: 1rem;
   line-height: 1.5625rem;
 }
