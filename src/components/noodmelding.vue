@@ -1,7 +1,7 @@
 <template>
   <div class="noodmelding-container">
   
-    <h3 class="tile__heading headingM">Noodsitutatie</h3>
+    <h3 class="tile__heading headingM">Nood situatie</h3>
   
     <button @click="maakNoodmelding" class="btn noodmelding">Noodmelding maken</button>
   
@@ -17,11 +17,7 @@
     methods: {
       maakNoodmelding() {
         console.log('Maak hier je noodmelding')
-        const endpoint = ``
-        axios.post(endpoint)
-          .then(res => {
-            console.log(res)
-          })
+        this.$router.push('maken')
       }
     }    
   }
