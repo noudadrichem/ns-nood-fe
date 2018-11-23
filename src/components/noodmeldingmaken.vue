@@ -56,12 +56,14 @@
         this.$set(this, 'notificationType', type)
       },
       verifyNotification() {
-        // this.$router.push('noodSituatieOverzicht')
+        this.$router.push('noodSituatieOverzicht')
         const body = {
-          notificationtype: 'noodmelding'
+          NotificationType: 'noodmelding'
         }
-
-        axios.post(`${this.$apiUrl}/api/komtmeldingaan`, body)
+        console.log(body);
+        axios.post(`${this.$apiUrl}/api/komtmeldingaan`, body, { headers: {
+          'Acces-Control-Allow-Origin': '*'
+        }})
           .then(res => {
             // this.$router.push('noodSituatieOverzicht')
             console.log(res)

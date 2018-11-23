@@ -1,7 +1,7 @@
 <template>
   <div class="noodmelding-container">
   
-    <h3 class="tile__heading headingM">Nood situatie</h3>
+    <h3 class="tile__heading headingM">Noodsituatie</h3>
   
     <button @click="maakNoodmelding" class="btn noodmelding">Noodmelding maken</button>
   

@@ -2,16 +2,20 @@
     <div class="NoodSituatieOverzichtInhoud">
                 
         <h2 class="tile__heading headingM">Noodsituatie gemeld</h2>
+
+        <div v-if="accepted" class="message good">
+            De conducteur is op de hoogte gesteld.
+        </div>
         
         <div class="infoText" >
-            <p>Noodsituatie is doorgegeven aan de conducteur op jouw trein, alsmede de NS Veiligheidscentrale</p>
+            <p>Noodsituatie is doorgegeven aan de conducteur op jouw trein, alsmede de NS Veiligheidscentrale.</p>
             <p>Je hebt het volgende doorgegeven <i><ins>{{ noodgeval }}</ins></i></p>
         </div>
         
         <div>
-            <p>Wil je directe verbinding met de conducteur</p>
+            <p>Wil je directe verbinding met de conducteur?</p>
         </div>
-        <button @click="startSpraakverbinding" class="btn spraakverbinding">Start Spraakgesprek</button>
+        <button @click="startSpraakverbinding" class="btn spraakverbinding">Start spraakverbinding</button>
     </div>
 </template>
 
@@ -20,11 +24,10 @@
     import Footer from "@/components/footer"
     import axios from 'axios'
     
-    
-
     export default {
         data: () => ({
-            noodgeval: "Test"
+            noodgeval: "Medisch noodgeval TS8749",
+            accepted: false
         }),
         components: {
             Hoofd,
@@ -39,6 +42,11 @@
                         console.log(res)
                     })
             }
+        },
+        mounted() {
+            setTimeout(e => {
+                this.$set(this, 'accepted', true)
+            }, 2000)
         }
     }
 </script>
@@ -72,5 +80,16 @@
     }
     p {
         margin-top: 24px;
+    }
+
+    .message.good {
+        padding: 20px;
+        background-color: rgba(76, 175, 80, .25);
+        border: 1px solid rgb(76, 175, 80);
+        color: hsl(122, 39%, 30%);
+        opacity: 0.83;
+        transition: opacity 0.6s;
+        margin-bottom: 15px;
+        font-size: 14px;
     }
 </style>
