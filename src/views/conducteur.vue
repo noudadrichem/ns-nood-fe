@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <Heading msg="Welcome to Your Vue.js App"/>
+  <div class="reiziger">
+    <Hoofd/>
+    <router-view></router-view>
+    <Footer/>
   </div>
 </template>
 
+
 <script>
+import Hoofd from "@/components/medewerker-head"
+import Footer from "@/components/footer"
+import Noodmelding from '@/components/noodmelding'
+import NoodSituatieOverzicht from '@/components/noodSituatieOverzicht'
 
-// @ is an alias to /src
-import Heading from '@/components/heading.vue'
-
-export default {
-  name: 'home',
-  components: {
-    Heading
+  export default {
+    components: {
+    	Hoofd,
+    	Footer,
+      Noodmelding,
+      NoodSituatieOverzicht
+    }
   }
-}
 </script>
+
