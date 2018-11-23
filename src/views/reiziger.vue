@@ -1,25 +1,24 @@
 <template>
-  <div class="reiziger">
-    <!-- <button class="button button--arrowRight rppb-plan-button"></button>
 
-    <span _ngcontent-c0="" class="icon icon--refresh icon--nsBlue icon--inline">
-      <span _ngcontent-c0="" class="alt">Vertrek </span>
-    </span> -->
-    <router-view></router-view>
-    <!-- <Noodmelding/> -->
+  <div class="reiziger">
+	<Hoofd/>
+        <router-view></router-view>
+    <Footer/>
   </div>
 </template>
 
+
 <script>
+import Hoofd from "@/components/heading"
+import Footer from "@/components/footer"
 import Noodmelding from '@/components/noodmelding'
 
-export default {
-  name: 'reiziger',
-  components: {
-    Noodmelding
+  export default {
+    components: {
+    	Hoofd,
+    	Footer,
+      Noodmelding
+    }
   }
-}
 </script>
-
-
 
