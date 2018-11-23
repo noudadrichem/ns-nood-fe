@@ -16,9 +16,9 @@
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "NS Sans","Segoe UI",Myriad,Verdana,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   display: flex;
   justify-content: center;
@@ -33,5 +33,11 @@
   max-height: 667px;
   background-color:#ededed;
   display: block;
+}
+
+p {
+  color: #060922;
+  font-size: 1rem;
+  line-height: 1.5625rem;
 }
 </style>

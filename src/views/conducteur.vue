@@ -5,6 +5,7 @@
 </template>
 
 <script>
+
 // @ is an alias to /src
 import Heading from '@/components/heading.vue'
 
