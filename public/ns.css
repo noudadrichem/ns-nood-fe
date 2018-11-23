@@ -6960,27 +6960,11 @@ html {
   font-size: 100%;
 }
 
-body {
-  background-color: #fff;
-  color: #060922;
-  line-height: 1.5625rem;
-  padding-top: 3.75rem;
-  min-width: 20rem;
-}
 @media screen and (min-width:640px) {
   body {
     overflow-x: hidden;
   }
 }
-@media print {
-  body {
-    background-color: #fff;
-    padding-top: 0;
-    max-width: 60rem;
-    margin: 0 auto;
-  }
-}
-
 p {
   font-size: 1rem;
   margin-top: 0;

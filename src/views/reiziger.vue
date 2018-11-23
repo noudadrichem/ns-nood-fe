@@ -1,5 +1,5 @@
 <template>
   <div class="reiziger">
-    hoi
+    <button class="button button--arrowRight rppb-plan-button">NS BUTTON</button>
   </div>
 </template>
