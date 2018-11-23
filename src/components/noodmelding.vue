@@ -3,7 +3,7 @@
   
     <h3 class="tile__heading headingM">Noodsitutatie</h3>
   
-    <button class="btn noodmelding">Noodmelding maken</button>
+    <button @click="maakNoodmelding" class="btn noodmelding">Noodmelding maken</button>
   
     <p>Zit je in een noodsituatie? De noodknop maakt een directe verbinding met <b></b> en zorgt ervoor dat de situatie zo snel mogelijk veilig wordt opgelost.</p>
   
@@ -11,8 +11,19 @@
 </template>
 
 <script>
+  import axios from 'axios'
+
   export default {
-  
+    methods: {
+      maakNoodmelding() {
+        console.log('Maak hier je noodmelding')
+        const endpoint = ``
+        axios.post(endpoint)
+          .then(res => {
+            console.log(res)
+          })
+      }
+    }    
   }
 </script>
 
