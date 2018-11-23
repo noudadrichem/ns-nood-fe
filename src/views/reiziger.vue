@@ -18,7 +18,7 @@ import NoodSituatieOverzicht from '@/components/noodSituatieOverzicht'
     	Hoofd,
     	Footer,
       Noodmelding,
-      NoodSituatieOverzicht
+        NoodSituatieOverzicht
     }
   }
 </script>
