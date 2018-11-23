@@ -1,5 +1,5 @@
 <template>
-  <div class="reiziger">
+  <div class="conducteur">
     <Hoofd/>
     <router-view></router-view>
     <Footer/>

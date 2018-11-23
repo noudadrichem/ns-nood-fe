@@ -5,6 +5,7 @@ import Conducteur from './views/conducteur.vue'
 import Noodmelding from './components/noodmelding.vue'
 import Noodmeldingmaken from './components/noodmeldingmaken.vue'
 import NoodSituatieOverzicht from './components/noodSituatieOverzicht.vue'
+import medewerker from './components/medewerkerRitInfo.vue'
 
 Vue.use(Router)
 
@@ -27,12 +28,16 @@ export default new Router({
       }, {
         path: 'noodSituatieOverzicht',
         component: NoodSituatieOverzicht
-      },]
+      }]
     },
     {
       path: '/conducteur',
       name: 'conducteur',
-      component: Conducteur
-    }
+      component: Conducteur,
+       children: [{
+          path: '',
+          component: medewerker
+       }]
+    },
   ]
 })
