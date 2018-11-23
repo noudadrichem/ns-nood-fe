@@ -1068,7 +1068,7 @@ table {
 .icon.icon--clock.icon--nsBlue,
 .mainMenu__link--reisinformatie:before,
 .mainMenu__link--reisinformatie:hover:before {
-  background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2235px%22%20height%3D%2235px%22%20viewBox%3D%220%200%2035%2035%22%20enable-background%3D%22new%200%200%2035%2035%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Cg%3E%20%20%3Cpath%20d%3D%22M17.5%2C27.5c-5.514%2C0-10-4.486-10-10s4.486-10%2C10-10s10%2C4.486%2C10%2C10S23.014%2C27.5%2C17.5%2C27.5z%20M17.5%2C8.5%20%20%20c-4.962%2C0-9%2C4.038-9%2C9s4.038%2C9%2C9%2C9s9-4.038%2C9-9S22.462%2C8.5%2C17.5%2C8.5z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%3E%20%3Cg%3E%20%20%3Cpath%20d%3D%22M21%2C21.5c-0.128%2C0-0.256-0.049-0.354-0.146L17%2C17.707V11c0-0.276%2C0.224-0.5%2C0.5-0.5S18%2C10.724%2C18%2C11v6.293l3.354%2C3.354%20%20%20c0.195%2C0.195%2C0.195%2C0.512%2C0%2C0.707C21.256%2C21.451%2C21.128%2C21.5%2C21%2C21.5z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2C%20ellipse%2C%20line%2C%20path%2C%20polygon%2C%20polyline%2C%20rect%2C%20text%20%7B%20fill%3A%20%23003082%3B%20%7D%3C%2Fstyle%3E%3C%2Fsvg%3E");
+  background-image: url("img/footer-logo/warning.svg")
 }
 
 .icon.icon--clock--nsRed,
