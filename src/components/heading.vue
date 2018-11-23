@@ -9,13 +9,6 @@
 	</div>
 </template>
 
-<script>
-export default {
-  name: 'heading',
-  props: ['msg']
-}
-</script>
-
 <style lang="css">
 
 	.topbar{
@@ -26,20 +19,25 @@ export default {
 		display: inline-block;
 	}
 	.arrow{
-		float:left;
-		width: 25%;
-		font-size: 25px;
+		font-size: 30px;
+		width: 40%;
 	}
-	.logo{
-		padding-top: 6px;
-		width: 50%;
-		float: left;
+	.arrow i{
+		padding-left: 10px;
 	}
 	.logo img{
-		width:30px;
+		width: 40px;
+		padding-top: 12px;
+		margin-left: 10px;
 	}
-	.rigt_space{
-		width: 25%;
+	.logo{
+
+		width: 20%;
+	}
+
+	.topbar div{
+		float:left;
+
 	}
 </style>
 
