@@ -22,12 +22,12 @@ export default new Router({
         path: 'noodmelding',
         component: Noodmelding
       }, {
+        path: 'maken',
+        component: Noodmeldingmaken
+      }, {
         path: 'noodSituatieOverzicht',
         component: NoodSituatieOverzicht
-      }, {
-        path: 'maken',x§
-        component: 'Noodmeldingmaken
-      }]
+      },]
     },
     {
       path: '/conducteur',
