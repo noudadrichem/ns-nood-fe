@@ -36,7 +36,7 @@
       <textarea v-model="description" class="textInput formfield__textInput" type="text"></textarea>
     </div>
 
-    <button class="button">Bevestig melding</button>
+    <button @click="verifyNotification" class="button">Bevestig melding</button>
   
   </div>
 </template>
@@ -47,23 +47,23 @@
   export default {
     data: () => ({
       notificationTypes: ['Agressie', 'Intimidatie', 'Medisch'],
-      notificationType: '',
+      notificationType: 'Intimidatie',
       trainNumber: '',
       description: '',
     }),
     methods: {
       setNotificationType(type) {
-        console.log({ type })
         this.$set(this, 'notificationType', type)
       },
-      maakNoodmelding() {
-        console.log('Maak hier je noodmelding')
-        // const endpoint = ``
-        // axios.post(endpoint)
-        //   .then(res => {
-        //     console.log(res)
-        //   })
-      }
+      verifyNotification() {
+        // this.$router.push('noodSituatieOverzicht')
+
+        axios.post(this.$apiUrl)
+          .then(res => {
+            // this.$router.push('noodSituatieOverzicht')
+            console.log(res)
+          })
+      },
     }
   }
 </script>
@@ -119,8 +119,8 @@
   }
   
   .train-number {
-    margin-top: 64px;
-    margin-bottom: 48px;
+    margin-top: 32px;
+    margin-bottom: 24px;
   }
   
   p.none {
