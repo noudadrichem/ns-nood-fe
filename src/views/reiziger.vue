@@ -1,8 +1,7 @@
 <template>
-
   <div class="reiziger">
-	<Hoofd/>
-        <router-view></router-view>
+    <Hoofd/>
+    <router-view></router-view>
     <Footer/>
   </div>
 </template>
@@ -19,7 +18,7 @@ import NoodSituatieOverzicht from '@/components/noodSituatieOverzicht'
     	Hoofd,
     	Footer,
       Noodmelding,
-        NoodSituatieOverzicht
+      NoodSituatieOverzicht
     }
   }
 </script>

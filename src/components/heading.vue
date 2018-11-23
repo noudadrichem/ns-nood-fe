@@ -17,13 +17,14 @@
 		width: 100%;
 		background-color:#FFC917;
 		display: inline-block;
+		margin-bottom: 16px;
 	}
 	.arrow{
 		font-size: 30px;
 		width: 40%;
 	}
 	.arrow i{
-		padding-left: 10px;
+		padding-left: 24px;
 	}
 	.logo img{
 		width: 40px;
