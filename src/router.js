@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Reiziger from './views/reiziger.vue'
 import Conducteur from './views/conducteur.vue'
 import Noodmelding from './components/noodmelding.vue'
+import Opties from './components/opties.vue'
 
 Vue.use(Router)
 
@@ -20,8 +21,8 @@ export default new Router({
         path: 'noodmelding',
         component: Noodmelding
       }, {
-        path: 'noodmelding',
-        component: Noodmelding
+        path: '',
+        component: Opties
       }]
     },
     {
