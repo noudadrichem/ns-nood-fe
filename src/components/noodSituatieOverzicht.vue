@@ -11,11 +11,15 @@
             <p>Noodsituatie is doorgegeven aan de conducteur op jouw trein, alsmede de NS Veiligheidscentrale.</p>
             <p>Je hebt het volgende doorgegeven <i><ins>{{ noodgeval }}</ins></i></p>
         </div>
-        
-        <div>
-            <p>Wil je directe verbinding met de conducteur?</p>
+
+        <div v-if="!verbonden">
+            <p>Wil je directe verbinding met de conducteur? true</p>
+            <button @click="startSpraakverbinding" class="btn spraakVerbinding">Start Spraakverbinding</button>
         </div>
-        <button @click="startSpraakverbinding" class="btn spraakverbinding">Start spraakverbinding</button>
+        <div v-else>
+            <NoodSituatieGesprek @close="verbreekVerbinding"/>
+        </div>
+
     </div>
 </template>
 
@@ -24,38 +28,40 @@
     import Footer from "@/components/footer"
     import axios from 'axios'
     
+    import NoodSituatieGesprek from '@/components/noodSituatieGesprek'
+    
+
     export default {
         data: () => ({
-            noodgeval: "Medisch noodgeval TS8749",
-            accepted: false
+            noodgeval: "Test",
+            verbonden: false
         }),
-        components: {
-            Hoofd,
-            Footer
-        },
         methods: {
             startSpraakverbinding() {
                 console.log('Spraakverbinding wordt gestart')
-                const endpoint = ``
-                axios.post(endpoint)
-                    .then(res => {
-                        console.log(res)
-                    })
+                this.$set(this, 'verbonden', true)
+            },
+            verbreekVerbinding() {
+                this.$set(this, 'verbonden', false)
+                console.log('spraak verbinding kapot')
             }
         },
         mounted() {
             setTimeout(e => {
                 this.$set(this, 'accepted', true)
             }, 2000)
+        }, 
+        components: {
+            NoodSituatieGesprek
         }
     }
 </script>
 
 <style lang="css">
     .NoodSituatieOverzichtInhoud {
-        padding:0 24px;
+        padding:0px 24px;
     }
-    .btn.spraakverbinding {
+    .btn.spraakVerbinding {
         background-color: #dc001f;
         display: inline-block;
         position: relative;
